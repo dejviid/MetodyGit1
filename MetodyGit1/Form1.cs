@@ -39,6 +39,9 @@ namespace MetodyGit1
             int x = int.Parse(textBox4.Text);
 
             MessageBox.Show("Datum po uplynutí " + x + " dnů bude: " + Metoda1(dnes, x).ToShortDateString());
+
+            //Fekimu to funguje bez problemu tato metoda. 
+            //A ja jsem spatne pochopil zadání.
         }
     }
 }
