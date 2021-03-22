@@ -20,8 +20,8 @@ namespace MetodyGit1
         DateTime nejstarsi(DateTime Narozen1, DateTime Narozen2, DateTime Narozen3)
         {
             DateTime nej = Narozen1;
-            if (Narozen2 < nej) nej = Narozen2;
-            if (Narozen3 < nej) nej = Narozen3;
+            if (Narozen2 > nej) nej = Narozen2;
+            if (Narozen3 > nej) nej = Narozen3;
             return nej;
         }
 
@@ -36,9 +36,9 @@ namespace MetodyGit1
             DateTime Narozen1 = DateTime.Parse(textBox1.Text);
             DateTime Narozen2 = DateTime.Parse(textBox2.Text);
             DateTime Narozen3 = DateTime.Parse(textBox3.Text);
-            DateTime nej = Narozen1;
-            
-            MessageBox.Show("Nejstarsi ze tri je: " + nej.ToString("dddd d. MM. yyyy"));
+                                   
+            MessageBox.Show("Nejstarsi ze tri je: " + nejstarsi(Narozen1, Narozen2, Narozen3).ToShortDateString());
+            //Funkční 
 
 
             //Metoda1
